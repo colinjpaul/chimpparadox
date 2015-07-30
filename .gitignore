@@ -18,3 +18,5 @@
 .metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources
 .metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
 .metadata/.plugins/org.eclipse.core.resources/.history/8f/e030113e913600151b3ee8e8b4c36804
+.metadata/.mylyn/.tasks.xml.zip
+.metadata/.mylyn/tasks.xml.zip
