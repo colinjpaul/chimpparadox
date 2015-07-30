@@ -3,7 +3,7 @@ public class sample_exams_qs {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("test");
+		System.out.println("testing changes to git");
 		
 	}
 
