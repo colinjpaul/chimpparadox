@@ -9,5 +9,4 @@ public class sample_exams_qs {
 			
 		System.out.println("now changing from work laptop");
 	}
-
 }
