@@ -15,5 +15,6 @@ public class sample_exams_qs {
 		//maybe not - it's friday!!!
 		//friday evening and going to turn off laptop now
 		//inevitable teething problems with windows 10
+		//now on new profile in Windows 10
 	}
 }
