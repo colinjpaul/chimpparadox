@@ -6,6 +6,7 @@ public class chapter_6 {
 		// TODO Auto-generated method stub
 		
 		//placeholder
+		//checking that nothing is broken
 	}
 
 }
