@@ -224,3 +224,9 @@ pip-log.txt
 LearningJava/src/ch02/.svn/all-wcprops
 LearningJava/src/ch02/.svn/text-base/HelloJava4.java.svn-base
 LearningJava/
+.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt
+*.xmi
+.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index
+*.index
+.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt
+*.dat
