@@ -230,3 +230,5 @@ LearningJava/
 *.index
 .metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt
 *.dat
+*.index
+*.xml
