@@ -221,3 +221,6 @@ pip-log.txt
 .metadata/.log
 .metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt
 .metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml
+LearningJava/src/ch02/.svn/all-wcprops
+LearningJava/src/ch02/.svn/text-base/HelloJava4.java.svn-base
+LearningJava/
