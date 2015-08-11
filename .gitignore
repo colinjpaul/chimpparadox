@@ -220,3 +220,4 @@ pip-log.txt
 .metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs
 .metadata/.log
 .metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt
+.metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml
