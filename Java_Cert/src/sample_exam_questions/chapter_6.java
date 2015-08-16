@@ -5,11 +5,7 @@ public class chapter_6 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		//placeholder
-		//checking that nothing is broken
-		
-		//change from work
-		 //change from glanmire 11th August 2015
+
 	}
 
 }
