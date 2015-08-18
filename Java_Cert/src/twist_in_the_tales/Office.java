@@ -19,18 +19,14 @@ class Programmer extends Employee{
 	}
 }
 
-
-public class Office {
+class Office {
 
 	public static void main(String[] args) {
 		
-		String tester = new Programmer ("Harry").getName();
-		
-		System.out.println(tester);
+		new Programmer ("Harry").getName();
 		
 		
 		
-
 	}
 
 }
