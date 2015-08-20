@@ -13,7 +13,7 @@ public class Bunkered {
 	    frame.setSize( 300, 300 );
 	    frame.setVisible( true );
 		
-	    
+	    //think where you can put interfaces
 	
 
 	}
