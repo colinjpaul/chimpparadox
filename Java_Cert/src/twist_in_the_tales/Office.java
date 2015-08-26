@@ -1,14 +1,23 @@
 package twist_in_the_tales;
 
-class Employee implements MyInterface{
+class Employee {
 	
 	String name;
 	String address;
 	String phoneNumber;  
 	float experience;
+}
+
+interface Interviewer{
+	public void conductInterview();
+}
+
+class HRExecutive extends Employee implements Interviewer{
+
+	String[] specialization;
 	
-	public String getName(){
-		return name;
+	public void conductInterview() {
+		System.out.println("HR Executive - Conducting Interview");
 	}
 	
 }
@@ -29,52 +38,40 @@ class Manager extends Employee implements Interviewer, Trainable{
 	
 }
 
-class Programmer extends Employee implements Trainable{
-	
-	String[] programmingLanguages;
-	void writeCode(){
-		
-	}
-	
-	
-	// When implementing methods belonging to an interface you must use the 'public' access modifier
-	public void attendTraining(String[] trainingSchedule){
-		System.out.println("Prog - attendTraining");
-	}
-	
-}
-
-interface BaseInterface1{
-	String getName();
-}
-
-interface BaseInterface2{
-	String getName();
-}
-
-interface MyInterface extends BaseInterface1, BaseInterface2{}
-
 
 interface Trainable{
 	// methods of an interface are implicitly public
 	public void attendTraining(String[] trainingSchedule);
 }
 
-interface Interviewer{
-	public void conductInterview();
-}
+
 
 class Office {
 
 	public static void main(String[] args) {
 		
-		Programmer Colin = new Programmer();
-		Colin.name = "my name";
+		//A variable of HRExecutive can be used to refer to its object
+		HRExecutive hr = new HRExecutive();
 		
-		String programmersName = Colin.getName();
+		//Access Variable defined in class HRExecutive
+		hr.specialization = new String[] {"Staffing"};
+		System.out.println(hr.specialization[0]);
 		
-		System.out.println(programmersName);
+		//Access Variable defined in class Employee
+		hr.name = "Pavni Gupta";
+		System.out.println(hr.name);
 		
+		//Access method defined in interface interviewer
+		hr.conductInterview();
+		
+		//Variable of type employee can also be used to refer to an object
+		//of class HRExecutive because class HRExecutive extends employee
+		
+		Employee emp = new HRExecutive();
+		
+		
+		
+			
 		
 	}
 }
