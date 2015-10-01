@@ -12,6 +12,12 @@ interface Interviewer{
 	public void conductInterview();
 }
 
+interface Trainable{
+	// methods of an interface are implicitly public
+	void attendTraining(String[] trainingSchedule);
+}
+
+
 class HRExecutive extends Employee implements Interviewer{
 
 	String[] specialization;
@@ -37,14 +43,6 @@ class Manager extends Employee implements Interviewer, Trainable{
 	}
 	
 }
-
-
-interface Trainable{
-	// methods of an interface are implicitly public
-	public void attendTraining(String[] trainingSchedule);
-}
-
-
 
 class Office {
 
