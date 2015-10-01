@@ -48,6 +48,7 @@ class Office {
 
 	public static void main(String[] args) {
 		
+		
 		//A variable of HRExecutive can be used to refer to its object
 		HRExecutive hr = new HRExecutive();
 		
@@ -68,17 +69,27 @@ class Office {
 		Employee emp = new HRExecutive();
 		
 		Interviewer interviewer = new HRExecutive();
+		//The above is fine but this isn't because you can't create an object of an interface...
+		//HRExecutive hr = new Interviewer();
 		
-		//Variable of a type interface (eg: Interviewer) can only access defined in interface Interviewer
+		
+		//Variable of a type interface (eg: Interviewer) can only access members defined in interface Interviewer
 		
 		interviewer.conductInterview();
 		
 		
 		
+		//Can create an array of interviewer and store in it objects of classes HR Executive & Mgr because
+		//those classes implement the interface interviewer
 		
-	
+		Interviewer[] interviewers = new Interviewer[2];
 		
+		interviewers[0] = new Manager();
+		interviewers[1] = new HRExecutive();
 		
+		for (Interviewer interviewer1 : interviewers){
+			interviewer1.conductInterview();
+		}
 			
 		
 	}
