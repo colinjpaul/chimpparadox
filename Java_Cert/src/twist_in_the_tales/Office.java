@@ -67,6 +67,16 @@ class Office {
 		
 		Employee emp = new HRExecutive();
 		
+		Interviewer interviewer = new HRExecutive();
+		
+		//Variable of a type interface (eg: Interviewer) can only access defined in interface Interviewer
+		
+		interviewer.conductInterview();
+		
+		
+		
+		
+	
 		
 		
 			
