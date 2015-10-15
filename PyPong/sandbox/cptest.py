@@ -1,1 +1,5 @@
-print("don't panic")
+import random
+import time
+
+
+print("test")
