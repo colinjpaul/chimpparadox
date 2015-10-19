@@ -69,7 +69,7 @@ class Office {
 		Employee emp = new HRExecutive();
 		
 		Interviewer interviewer = new HRExecutive();
-		//The above is fine but this isn't because you can't create an object of an interface...
+		//The above is fine but what follows isn't because you can't create an object of an interface...
 		//HRExecutive hr = new Interviewer();
 		
 		
