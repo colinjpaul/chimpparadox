@@ -43,6 +43,8 @@ class Office2 {
 		
 		((HRExecutive)interviewer).specialization = new String[]{"Staffing"};
 		
+		System.out.println("hello from home laptop");
+		
 		
 	}
 }
