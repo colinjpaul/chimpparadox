@@ -1,5 +1,1 @@
-import random
-import time
-
-
-print("test")
+print("test from work laptop")
