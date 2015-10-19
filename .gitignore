@@ -2,8 +2,6 @@
 ## Eclipse
 #################
 
-*.pydevproject
-.project
 .metadata
 bin/
 tmp/
@@ -12,8 +10,6 @@ tmp/
 *.swp
 *~.nib
 local.properties
-.classpath
-.settings/
 .loadpath
 
 # External tool builders
@@ -236,3 +232,4 @@ LearningJava/
 *.xmi
 *.log
 .metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml
+*.log
