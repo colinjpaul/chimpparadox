@@ -6,6 +6,35 @@ class Employee {
 	String address;
 	String phoneNumber;  
 	float experience;
+	
+	
+	
+	
+	Employee(){
+		name = "NoName";
+		address = "No Address";
+		
+	}
+	
+	Employee (String name){
+		
+		//In the scope of the method block the local variable 'name'
+		//will take precedence over the instance variable name so need
+		//to prefix with 'this'
+		this.name = name;
+		
+	}
+	
+	Employee (String name, String Address){
+		this();
+		
+		if (name != null) this.name = name;
+		if (address != null) this.address = address;
+		
+	}
+	
+	
+
 }
 
 interface Interviewer{
@@ -14,6 +43,11 @@ interface Interviewer{
 
 
 class HRExecutive extends Employee implements Interviewer{
+
+	HRExecutive(String name) {
+		super(name);
+		// TODO Auto-generated constructor stub
+	}
 
 	String[] specialization;
 	
@@ -25,26 +59,48 @@ class HRExecutive extends Employee implements Interviewer{
 
 class Manager implements Interviewer{
 	
-	int teamSize;
+	int teamSize = 10;
 		
 	public void conductInterview(){
 		System.out.println("Mgr - conductInterview");
 	}
-	
-	
-	
+}
+
+class Programmer extends Employee{
+	void accessEmployeeVaribles(){
+		this.name = "Programmer";
+	}
 }
 
 class Office2 {
 
 	public static void main(String[] args) {
 		
-		Interviewer interviewer = new HRExecutive();
+		Interviewer[] interviewers = new Interviewer[2];
 		
-		((HRExecutive)interviewer).specialization = new String[]{"Staffing"};
+		interviewers[0] = new Manager();
+		interviewers[1] = new HRExecutive();
 		
-		System.out.println("bed time");
-		
+		for (Interviewer interviewer : interviewers)
+		{
+			if (interviewer instanceof Manager){
+				int teamSize = ((Manager)interviewer).teamSize;
+				
+				if (teamSize > 10){
+					interviewer.conductInterview();
+				}
+				else{
+					System.out.println("Manager with a team less than 10 can't interview ");
+				}
+				
+				
+			}
+			
+			else if (interviewer instanceof HRExecutive){
+				interviewer.conductInterview();
+			}
+						
+		}
 		
 	}
 }
