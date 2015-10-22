@@ -7,16 +7,13 @@ class Employee {
 	String phoneNumber;  
 	float experience;
 	
-	
-	
-	
-	Employee(){
+	/*Employee(){
 		name = "NoName";
 		address = "No Address";
 		
-	}
+	}*/
 	
-	Employee (String name){
+	/*Employee (String name){
 		
 		//In the scope of the method block the local variable 'name'
 		//will take precedence over the instance variable name so need
@@ -26,14 +23,12 @@ class Employee {
 	}
 	
 	Employee (String name, String Address){
-		this();
+		this(name);
 		
-		if (name != null) this.name = name;
-		if (address != null) this.address = address;
+		this.address = address;
 		
-	}
-	
-	
+	}*/
+		
 
 }
 
@@ -43,11 +38,6 @@ interface Interviewer{
 
 
 class HRExecutive extends Employee implements Interviewer{
-
-	HRExecutive(String name) {
-		super(name);
-		// TODO Auto-generated constructor stub
-	}
 
 	String[] specialization;
 	
@@ -66,11 +56,6 @@ class Manager implements Interviewer{
 	}
 }
 
-class Programmer extends Employee{
-	void accessEmployeeVaribles(){
-		this.name = "Programmer";
-	}
-}
 
 class Office2 {
 
