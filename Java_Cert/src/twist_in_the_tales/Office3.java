@@ -2,22 +2,21 @@ package twist_in_the_tales;
 
 class Employee{
 	
-	String name;
-	String address;
+	String name = "Emp";
+	String address = "EmpAddress";
+		
+}
 	
-	Employee(){
-		name = "NoName";
-		address = "NoAddress";
-	}
+
+
+class Programmer extends Employee{
 	
-	Employee(String name){
-		this.name = name;		
-	}
-	
-	Employee(String name, String address){
-		this();
-		if (name !=null) this.name = name;
-		if (address !=null) this.address = address;
+	String name = "Prog";
+	void printValues(){
+		System.out.print(this.name + ":");
+		System.out.print(this.address  + ":");
+		System.out.print(super.name + ":");
+		System.out.print(super.address);
 	}
 	
 }
@@ -26,11 +25,8 @@ public class Office3 {
 
 	public static void main(String[] args) {
 
-		Employee newEmployee = new Employee("some name", "some address");
+		new Programmer().printValues();
 		
-		System.out.println(newEmployee.name);
-		System.out.println(newEmployee.address);
-
 	}
 
 }

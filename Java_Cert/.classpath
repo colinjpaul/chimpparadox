@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry excluding="twist_in_the_tales/Office.java|twist_in_the_tales/Office2.java" kind="src" path="src"/>
+	<classpathentry excluding="twist_in_the_tales/Office.java|twist_in_the_tales/Office2.java|twist_in_the_tales/Office3.java|twist_in_the_tales/Office4.java|twist_in_the_tales/twist_64.java|twist_in_the_tales/Office5.java" kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
