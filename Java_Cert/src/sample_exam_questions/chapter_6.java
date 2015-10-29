@@ -1,30 +1,34 @@
 package sample_exam_questions;
 
-class Animal{
-	void jump(){
-		System.out.println("Animal");
+interface Employee{
+	
+}
+
+interface Printable extends Employee{
+	String print();
+}
+
+class Programmer {
+	String print(){
+		return ("Programmer - Mala Gupta");
 	}
 }
 
-class Cat extends Animal{
-	void jump(int a){
-		System.out.println("Cat");
-	}
-}
-
-class Rabbit extends Animal{
-	void jump(){
-		System.out.println("Rabbit");
+class Author extends Programmer implements Printable, Employee{
+	public String print(){
+		return ("Author - Mala Gupta");
 	}
 }
 
 public class chapter_6 {
 
 	public static void main(String[] args) {
-		Animal cat = new Cat();
-		Rabbit rabbit = new Rabbit();
-		cat.jump();
-		rabbit.jump();
+		
+		Programmer a = new Programmer();
+		Author b = new Author();
+		
+		a.print();
+		b.print();
 		
 
 	}
