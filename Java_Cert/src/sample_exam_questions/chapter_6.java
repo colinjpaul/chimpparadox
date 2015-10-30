@@ -1,34 +1,39 @@
 package sample_exam_questions;
 
-interface Employee{
+class Base {
+	String var = "EJava";
+	void printVar(){
+		System.out.println(var);
+	}
+}
+
+class Derived extends Base{
+	String var = "Guru";
+	void printVar(){
+		System.out.println(var);
+	}
 	
-}
-
-interface Printable extends Employee{
-	String print();
-}
-
-class Programmer {
-	String print(){
-		return ("Programmer - Mala Gupta");
-	}
-}
-
-class Author extends Programmer implements Printable, Employee{
-	public String print(){
-		return ("Author - Mala Gupta");
-	}
 }
 
 public class chapter_6 {
 
 	public static void main(String[] args) {
 		
-		Programmer a = new Programmer();
-		Author b = new Author();
+		Base base = new Base();
+		Base derived = new Derived();
 		
-		a.print();
-		b.print();
+		//Prints EJava - instance variable binds at compile time
+		System.out.println(base.var);
+		
+		//Prints EJava - instance variable binds at compile time
+		System.out.println(derived.var);
+		
+		//Prints EJava - methods bind at run time
+		base.printVar();
+		
+		//Prints Guru - methods bind at run time
+		derived.printVar();
+	
 		
 
 	}
