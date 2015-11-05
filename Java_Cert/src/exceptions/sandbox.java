@@ -2,6 +2,7 @@ package exceptions;
 
 class FallInRiverException extends Exception{
 	
+		
 }
 
 class DropOarException extends Exception{
@@ -29,8 +30,8 @@ public class sandbox {
 	{
 		RiverRafting riverRafting = new RiverRafting();
 		try{
-			riverRafting.crossRapid(7);
-			riverRafting.rowRaft("nervous");
+			riverRafting.crossRapid(9);
+			riverRafting.rowRaft("happy");
 			System.out.println("Enjoy River Rafting");
 		}
 		
