@@ -16,7 +16,7 @@ public class sandbox2 {
 	private static void openFile(){
 		FileInputStream fis = null;
 		try{
-			fis = new FileInputStream("C:\\Users\\cjadmin\\Documents\\GitHub\\chimpparadox\\testfiles\\file.txt");
+			fis = new FileInputStream("\\..\\..\\..\\..\\testfiles\\file.txt");
 		}
 		catch(FileNotFoundException fnfe){
 			System.out.println("File not found");
