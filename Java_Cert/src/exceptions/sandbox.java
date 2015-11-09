@@ -30,7 +30,7 @@ public class sandbox {
 	{
 		RiverRafting riverRafting = new RiverRafting();
 		try{
-			riverRafting.crossRapid(9);
+			riverRafting.crossRapid(10);
 			riverRafting.rowRaft("happy");
 			System.out.println("Enjoy River Rafting");
 		}
