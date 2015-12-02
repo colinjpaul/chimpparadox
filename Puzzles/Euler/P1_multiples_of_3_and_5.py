@@ -5,3 +5,4 @@ def multiples_of_3_or_5():
 
 print sum(multiples_of_3_or_5())
 
+print 'in work'
