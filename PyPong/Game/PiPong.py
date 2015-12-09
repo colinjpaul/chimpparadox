@@ -1,5 +1,9 @@
 import pygame
+import sys
+import random
 
-print "pypong"
+from pygame.locals import *
+from pygame import *
 
+    class PiPong:
 
