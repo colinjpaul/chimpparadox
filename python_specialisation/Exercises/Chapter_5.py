@@ -1,10 +1,11 @@
-largest_so_far = -1
+smallest = None
 
-print 'Before', largest_so_far
+print 'Before', smallest
 
 for num in [9,41,12,3,74,15]:
-    if num > largest_so_far:
-        largest_so_far = num
-    print largest_so_far
+    if smallest is None:
+       smallest = num
+    elif num < smallest:
+        smallest = num
+    print smallest
 
-print 'After', largest_so_far
