@@ -11,3 +11,4 @@ print count
 
 
 
+#debugging - page 87 in book (videos for chapter 6 completed)
