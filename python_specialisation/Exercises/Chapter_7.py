@@ -1,12 +1,13 @@
-text = open('C:\\Users\\paulc1\\Documents\\GitHub\\chimpparadox\\testfiles\\py_chapter7.txt', 'r')
+fname = raw_input("enter filename: ")
+try:
+    fhand = open(fname)
+except:
+    print 'file not found'
+    exit()
 
 count = 0
+for line in fhand:
+    if line.startswith('From:'):
+        count += 1
 
-for word in text:
-    count += 1
-
-print (count)
-
-#Continue from 13:55
-
-
+print count
