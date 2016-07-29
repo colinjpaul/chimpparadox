@@ -1,5 +1,5 @@
 
-fhand = open('C:\\Users\\paulc1\\Documents\\GitHub\\chimpparadox\\testfiles\\mbox-short.txt')
+fhand = open('C:\\users\\cjadmin\\Documents\\GitHub\\chimpparadox\\testfiles\\mbox-short.txt')
 for line in fhand:
     line = line.rstrip()
     if not line.startswith('From '): continue

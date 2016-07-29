@@ -1,10 +1,5 @@
-counts = dict()
-names = ['csev', 'cwen', 'csev', 'zqian', 'cwen']
-for name in names:
-    counts[name]=counts.get(name,0)+1
+jjj = {'chuck': 1, 'fred': 42, 'jan': 100}
 
-print counts
-
-
-
+for aaa, bbb in jjj.items():
+    print aaa, bbb
 
