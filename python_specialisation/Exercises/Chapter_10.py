@@ -1,5 +1,5 @@
 fname = raw_input("Enter file name: ")
-if len(fname) < 1 : fname = "C://Users//paulc1//Documents//GitHub//chimpparadox//testfiles/romeo.txt"
+if len(fname) < 1 : fname = "C://Users//cjadmin//Documents//GitHub//chimpparadox//testfiles/romeo.txt"
 fhand = open(fname)
 
 counts = dict()
@@ -17,3 +17,11 @@ lst.sort(reverse=True)
 
 for val, key in lst[:10]:
     print key, val
+
+
+# Shorter version
+
+c = {'a': 10, 'b': 1, 'c': 22}
+
+print sorted([(v, k) for k, v in c.items()])
+
