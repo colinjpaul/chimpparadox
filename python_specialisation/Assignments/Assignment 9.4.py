@@ -1,5 +1,5 @@
 name = raw_input("Enter file:")
-if len(name) < 1 : name = "C:\\users\\cjadmin\\Documents\\GitHub\\chimpparadox\\testfiles\\mbox-short.txt"
+if len(name) < 1 : name = "C:\\users\\paulc1\\Documents\\GitHub\\chimpparadox\\testfiles\\mbox-short.txt"
 handle = open(name)
 counts = dict()
 
