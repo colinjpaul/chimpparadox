@@ -27,12 +27,15 @@ for line in handle:
     lst = list()
 
     # Populate list
-    for hour, count in counts.items():
-        lst.append((hour, count))
 
+for hour, count in counts.items():
+    lst.append((hour, count))
 
+lst.sort()
 
-#print sorted([(hour, count) for hour, count in counts.items()])
+for key, val in lst:
+    print key, val
+
 
 
 
