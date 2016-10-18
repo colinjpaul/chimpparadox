@@ -1,7 +1,7 @@
 import re
 
-x = 'From colin.paul@dell.com Tue Oct'
-y = re.findall('^From .*@([^ ]*)', x)
+x = 'From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008'
+y = re.findall('\S+?@\S+', x)
 print y
 
 
