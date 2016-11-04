@@ -19,4 +19,18 @@ while running:
         elif event.type == QUIT:
             running = False
 
+    # surface
+    surf = pygame.Surface((50, 50))
+    surf.fill((255, 255, 255))
+    rect = surf.get_rect()
+
+    # blit surface onto surface (our screen)
+    screen.blit(surf, (400, 300))
+    pygame.display.flip()
+
+
+
+
+
+
 
