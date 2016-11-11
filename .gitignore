@@ -233,3 +233,7 @@ LearningJava/
 *.log
 .metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml
 *.log
+*.name
+*.iml
+Games/pipong/__init__.py
+python_specialisation/__init__.py
