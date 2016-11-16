@@ -7,10 +7,17 @@ from BeautifulSoup import *
 #url = raw_input('Enter URL: ')
 
 url = "http://python-data.dr-chuck.net/known_by_Fikret.html"
-html = urllib.urlopen(url).read()
-soup = BeautifulSoup(html)
 
-tags = soup('a')
+def crawl():
+    html = urllib.urlopen(url).read()
+    soup = BeautifulSoup(html)
+    tags = soup('a')
+    print(tags)
+
+crawl()
+
+'''
+
 
 count = raw_input("Enter count: ")
 position = raw_input("Enter position: ")
@@ -20,25 +27,26 @@ currentPosition = 1
 
 print("Retrieving: " + url)
 
-for tag in tags:
-    print("Retrieving: " + tag.get('href', None))
-
-    if currentPosition == int(position):
-        followMe = tag.get('href', None)
-
-        html = urllib.urlopen(followMe).read()
-        soup = BeautifulSoup(html)
-        tags = soup('a')
-        print tags
-
-
+while currentCount < 4:
+    for tag in tags:
+        if currentPosition == int(position):
+            followMe = tag.get('href', None)
+            print("Retrieving: " + followMe)
+            html = urllib.urlopen(followMe).read()
+            soup = BeautifulSoup(html)
+            tags = soup('a')
+        currentPosition += 1
+currentCount += 1
 
 
-    currentPosition += 1
 
-    '''if position == 3:
+
+
+
+
+
+    if position == 3:
         print tag.contents[0]
 
-    num = int(tag.contents[0])'''
-
-
+    num = int(tag.contents[0])
+'''
