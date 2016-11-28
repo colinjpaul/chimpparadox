@@ -52,6 +52,8 @@ while running:
     screen.blit(player.surf, (400, 300))
     pygame.display.flip()
 
+#Change from ashy pally
+
 
 
 
