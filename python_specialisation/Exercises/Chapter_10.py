@@ -1,5 +1,5 @@
 fname = raw_input("Enter file name: ")
-if len(fname) < 1 : fname = "C://Users//cjadmin//Documents//GitHub//chimpparadox//testfiles/romeo.txt"
+if len(fname) < 1 : fname = "C://Users//paulc1//Documents//GitHub//chimpparadox//testfiles//romeo.txt"
 fhand = open(fname)
 
 counts = dict()

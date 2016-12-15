@@ -1,0 +1,338 @@
+Python 3.5.0 (v3.5.0:374f501f4567, Sep 13 2015, 02:16:59) [MSC v.1900 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> import os
+>>> os.listdir('.')
+['env']
+>>> os.system('dir')
+0
+>>> if not os.system('dir'); print('ok')
+SyntaxError: invalid syntax
+>>> if not os.system('dir'): print('ok')
+
+ok
+>>> os.open
+<built-in function open>
+>>> os.popen('dir','r')
+<os._wrap_close object at 0x032B01F0>
+>>> po = os.popen('dir', 'r')
+>>> list(po)
+[' Volume in drive C has no label.\n', ' Volume Serial Number is A473-8899\n', '\n', ' Directory of C:\\Users\\paulc1\\Desktop\\VCE_Course\n', '\n', '06/12/2016  10:27am    <DIR>          .\n', '06/12/2016  10:27am    <DIR>          ..\n', '06/12/2016  10:27am    <DIR>          env\n', '               0 File(s)              0 bytes\n', '               3 Dir(s)  39,875,727,360 bytes free\n']
+>>> list(po)
+[]
+>>> po = os.open('dir', 'r')
+Traceback (most recent call last):
+  File "<pyshell#11>", line 1, in <module>
+    po = os.open('dir', 'r')
+TypeError: an integer is required (got type str)
+>>> po = os.open('dir', 'r')
+Traceback (most recent call last):
+  File "<pyshell#12>", line 1, in <module>
+    po = os.open('dir', 'r')
+TypeError: an integer is required (got type str)
+>>> po = os.popen('dir', 'r')
+>>> list(po)
+[' Volume in drive C has no label.\n', ' Volume Serial Number is A473-8899\n', '\n', ' Directory of C:\\Users\\paulc1\\Desktop\\VCE_Course\n', '\n', '06/12/2016  10:27am    <DIR>          .\n', '06/12/2016  10:27am    <DIR>          ..\n', '06/12/2016  10:27am    <DIR>          env\n', '               0 File(s)              0 bytes\n', '               3 Dir(s)  39,875,547,136 bytes free\n']
+>>> dir(po)
+['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__enter__', '__eq__', '__exit__', '__format__', '__ge__', '__getattr__', '__getattribute__', '__gt__', '__hash__', '__init__', '__iter__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_proc', '_stream', 'close']
+>>> dir(poi)
+Traceback (most recent call last):
+  File "<pyshell#16>", line 1, in <module>
+    dir(poi)
+NameError: name 'poi' is not defined
+>>> po = os.popen('dir','r')
+>>> for file in po:
+	print(file,end="end")
+
+
+ Volume in drive C has no label.
+end Volume Serial Number is A473-8899
+end
+end Directory of C:\Users\paulc1\Desktop\VCE_Course
+end
+end06/12/2016  10:27am    <DIR>          .
+end06/12/2016  10:27am    <DIR>          ..
+end06/12/2016  10:27am    <DIR>          env
+end               0 File(s)              0 bytes
+end               3 Dir(s)  39,875,493,888 bytes free
+end
+>>>
+>>> li = [1,7,11,42]
+>>> d = {'uk':44, 'ire':353}
+>>> t = (10, 20, 30)
+>>> s = 'vce'
+>>> len(d)
+2
+>>> class C:
+	def __len__(self):
+		return 42
+
+
+>>> obj = C()
+>>> len(obj)
+42
+>>> class C:
+	def __init__(self)
+
+SyntaxError: invalid syntax
+>>> class C:
+	def __init__(self):
+		self.mycoll = [1, 7, 11, 42]
+	def __len__(self):
+		return len(self.mycoll)
+
+
+>>> obj = C()
+>>> len(obj)
+4
+>>> obj.__len__()
+4
+>>> obj
+<__main__.C object at 0x03244730>
+>>> li[0]
+1
+>>> s[0]
+'v'
+>>> t[0]
+10
+>>> obj[0]
+Traceback (most recent call last):
+  File "<pyshell#50>", line 1, in <module>
+    obj[0]
+TypeError: 'C' object does not support indexing
+>>>
+=========== RESTART: C:/Users/paulc1/Desktop/VCE_Course/truths.py ===========
+Traceback (most recent call last):
+  File "C:/Users/paulc1/Desktop/VCE_Course/truths.py", line 7, in <module>
+    print (len(obj))
+TypeError: object of type 'Truths' has no len()
+>>>
+=========== RESTART: C:/Users/paulc1/Desktop/VCE_Course/truths.py ===========
+4
+>>>
+=========== RESTART: C:/Users/paulc1/Desktop/VCE_Course/truths.py ===========
+4
+1
+>>>
+=========== RESTART: C:/Users/paulc1/Desktop/VCE_Course/truths.py ===========
+4
+[11, 42]
+>>>
+=========== RESTART: C:/Users/paulc1/Desktop/VCE_Course/truths.py ===========
+4
+getitem
+[11, 42]
+>>>
+=========== RESTART: C:/Users/paulc1/Desktop/VCE_Course/truths.py ===========
+4
+getitem
+[11, 42]
+getitem
+1
+getitem
+7
+getitem
+11
+getitem
+42
+getitem
+>>>
+=========== RESTART: C:/Users/paulc1/Desktop/VCE_Course/truths.py ===========
+4
+getitem
+[11, 42]
+getitem
+1
+getitem
+7
+getitem
+11
+getitem
+42
+getitem
+getitem
+getitem
+getitem
+getitem
+getitem
+[1, 7, 11, 42]
+>>>
+=========== RESTART: C:/Users/paulc1/Desktop/VCE_Course/truths.py ===========
+4
+getitem
+[11, 42]
+getitem
+1
+getitem
+7
+getitem
+11
+getitem
+42
+getitem
+getitem
+getitem
+getitem
+getitem
+getitem
+[1, 7, 11, 42]
+getitem
+getitem
+getitem
+getitem
+getitem
+(1, 7, 11, 42)
+>>>
+=========== RESTART: C:/Users/paulc1/Desktop/VCE_Course/truths.py ===========
+4
+getitem
+[11, 100]
+getitem
+1
+getitem
+7
+getitem
+11
+getitem
+100
+getitem
+getitem
+getitem
+getitem
+getitem
+getitem
+[1, 7, 11, 100]
+getitem
+getitem
+getitem
+getitem
+getitem
+(1, 7, 11, 100)
+>>>
+=========== RESTART: C:/Users/paulc1/Desktop/VCE_Course/truths.py ===========
+4
+getitem
+[11, 42]
+getitem
+100
+getitem
+7
+getitem
+11
+getitem
+42
+getitem
+getitem
+getitem
+getitem
+getitem
+getitem
+[100, 7, 11, 42]
+getitem
+getitem
+getitem
+getitem
+getitem
+(100, 7, 11, 42)
+>>>
+=========== RESTART: C:/Users/paulc1/Desktop/VCE_Course/truths.py ===========
+4
+getitem
+[11, 42]
+getitem
+1
+getitem
+7
+getitem
+11
+getitem
+42
+getitem
+getitem
+getitem
+getitem
+getitem
+getitem
+[1, 7, 11, 42]
+getitem
+getitem
+getitem
+getitem
+getitem
+(1, 7, 11, 42)
+setitem
+getitem
+getitem
+getitem
+getitem
+getitem
+[100, 7, 11, 42]
+>>>
+=========== RESTART: C:/Users/paulc1/Desktop/VCE_Course/truths.py ===========
+4
+getitem
+[11, 42]
+getitem
+1
+getitem
+7
+getitem
+11
+getitem
+42
+getitem
+getitem
+getitem
+getitem
+getitem
+getitem
+[1, 7, 11, 42]
+getitem
+getitem
+getitem
+getitem
+getitem
+(1, 7, 11, 42)
+setitem
+getitem
+getitem
+getitem
+getitem
+getitem
+[100, 7, 11, 42]
+>>> obj
+<__main__.Truths object at 0x030D7E70>
+>>>
+=========== RESTART: C:/Users/paulc1/Desktop/VCE_Course/truths.py ===========
+4
+getitem
+[11, 42]
+getitem
+1
+getitem
+7
+getitem
+11
+getitem
+42
+getitem
+getitem
+getitem
+getitem
+getitem
+getitem
+[1, 7, 11, 42]
+getitem
+getitem
+getitem
+getitem
+getitem
+(1, 7, 11, 42)
+setitem
+setitem
+getitem
+getitem
+getitem
+getitem
+getitem
+[200, 7, 11, 42]
+>>> 
