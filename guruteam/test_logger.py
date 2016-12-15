@@ -1,5 +1,5 @@
 import os
-os.environ['USER'] = 'Jean'
+os.environ['USER'] = 'Colin'
 
    
 def logger(func):
@@ -10,7 +10,7 @@ def logger(func):
 
 def auth(func):
     def ifunc():
-        if os.environ['USER'] == 'Jean':
+        if os.environ['USER'] == 'Colin':
             func()
             print('allowed',func.__name__)
     return ifunc

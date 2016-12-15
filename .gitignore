@@ -238,3 +238,4 @@ LearningJava/
 Games/pipong/__init__.py
 python_specialisation/__init__.py
 .idea/chimpparadox.iml
+*.iml
