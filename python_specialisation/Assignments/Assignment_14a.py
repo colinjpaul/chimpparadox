@@ -11,7 +11,7 @@ CREATE TABLE Counts (org TEXT, count INTEGER)''')
 
 fname = raw_input('Enter file name: ')
 if (len(fname) < 1 ):
-    fname = 'mbox-short.txt'
+    fname = 'mbox.txt'
 fh = open(fname)
 for line in fh:
 
