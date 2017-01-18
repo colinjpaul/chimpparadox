@@ -6,6 +6,8 @@ cur = conn.cursor()
 cur.execute('''
 DROP TABLE IF EXISTS Counts''')
 
+#test change from work
+
 cur.execute('''
 CREATE TABLE Counts (org TEXT, count INTEGER)''')
 
