@@ -17,11 +17,6 @@ try:
         print ('Custom exception occured: ', e.value)
 
 
-
-
-
-
-#
 #
 # except IOError:
 #     print('just IO error')
