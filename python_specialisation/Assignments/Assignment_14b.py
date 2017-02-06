@@ -5,33 +5,38 @@ conn = sqlite3.connect('trackdb.sqlite')
 cur = conn.cursor()
 
 #Make tables
-cur.execute('''
-CREATE TABLE IF NOT EXISTS Artist (
-    id  INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
-    name    TEXT UNIQUE)
-''')
 
-cur.execute('''
-CREATE TABLE IF NOT EXISTS Genre (
-    id  INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
-    name    TEXT UNIQUE)
-''')
+cur.executescript('''
+DROP TABLE IF EXISTS Artist;
+DROP TABLE IF EXISTS Album;
+DROP TABLE IF EXISTS Genre;
+DROP TABLE IF EXISTS Track;
 
-cur.execute('''
-CREATE TABLE IF NOT EXISTS Album (
+CREATE TABLE Artist (
+    id  INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
+    name    TEXT UNIQUE
+);
+
+CREATE TABLE Album (
     id  INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
     artist_id   INTEGER,
-    title   TEXT UNIQUE)
-''')
+    title   TEXT UNIQUE
+);
 
-cur.execute('''
-CREATE TABLE IF NOT EXISTS Track (
+CREATE TABLE Genre (
+    id  INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
+    name    TEXT UNIQUE
+);
+
+CREATE TABLE Track (
     id  INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
     title    TEXT UNIQUE,
     album_id    INTEGER,
     genre_id    INTEGER,
-    len INTEGER, rating INTEGER, count INTEGER)
+    len INTEGER, rating INTEGER, count INTEGER
+);
 ''')
+
 
 def lookup(d, key):
     found = False
@@ -59,10 +64,10 @@ for entry in all:
     rating = lookup(entry, 'Rating')
     length = lookup(entry, 'Total Time')
 
-    if name is None or artist is None or album is None:
+    if name is None or artist is None or album is None or genre is None:
         continue
 
-    print name, artist, album, count, rating, length
+    #print name, artist, album, count, rating, length
 
     cur.execute('''INSERT OR IGNORE INTO Artist (name)
         VALUES ( ? )''', (artist, ))
