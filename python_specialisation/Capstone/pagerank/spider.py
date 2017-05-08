@@ -89,7 +89,6 @@ while True:
             cur.execute('UPDATE Pages SET error=-1 WHERE url=?', (url, ) )
             conn.commit()
             continue
-
         print '('+str(len(html))+')',
 
         soup = BeautifulSoup(html)
