@@ -155,7 +155,7 @@ cur.execute('''CREATE TABLE IF NOT EXISTS Subjects
 cur.execute('''CREATE TABLE IF NOT EXISTS Replies
     (from_id INTEGER, to_id INTEGER)''')
 
-conn_1 = sqlite3.connect('mapping.sqlite')
+conn_1 = sqlite3.connect('content.sqlite')
 cur_1 = conn_1.cursor()
 
 cur_1.execute('''SELECT old,new FROM DNSMapping''')
