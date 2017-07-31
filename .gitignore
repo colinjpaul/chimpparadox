@@ -242,3 +242,6 @@ python_specialisation/__init__.py
 *.iml
 *.iml
 *.sqlite
+*.iml
+Java_Cert_8/src/sandbox/AssessmentTest.class
+*.iml
