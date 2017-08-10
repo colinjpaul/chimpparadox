@@ -2,14 +2,15 @@ public class AssessmentTest{
     public static void main(String[] args){
         System.out.print("a");
         try {
-            System.out.print("b")
+            System.out.print("b");
             throw new IllegalArgumentException();
-            catch (RuntimeException e) {
+        }
+        catch (RuntimeException e) {
             System.out.print("c");
-            finally {
+        }
+        finally {
                 System.out.print("d");
             }
         System.out.print("e");
     }
-
 }
