@@ -9,6 +9,8 @@ class TestEmp{
         System.out.println(emp1.bankVault);
         System.out.println(emp2.bankVault);
         System.out.println(Emp.bankVault);
+
+        System.out.println(emp1.averageOfFirst100Integers());
     }
 
 }
