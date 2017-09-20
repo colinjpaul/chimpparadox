@@ -1,13 +1,19 @@
+def sum_multiples(num, limit):
+    """ Calculates the sum of multiples of a given number.
+    Args:
+        num: The multiple.
+        limit: The upper limit.
+    Returns:
+        The sum of the terms of a given multiple.
+    """
+    sum = 0
+    for i in range(num, limit, num):
+        sum += i
+    return sum
 
-def multiples_of_3_or_5():
-    for number in range(100):
-        if not number % 3 or not number % 5:
-            yield number
-print(sum(multiples_of_3_or_5()))
+def sum(limit):
+    return (sum_multiples(3, limit) +
+            sum_multiples(5, limit) -
+            sum_multiples(15, limit))
 
-
-
-
-
-
-
+print (sum(1000))
