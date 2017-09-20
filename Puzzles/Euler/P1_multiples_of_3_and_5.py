@@ -2,7 +2,7 @@ def sum_multiples(num, limit):
     """ Calculates the sum of multiples of a given number.
     Args:
         num: The multiple.
-        limit: The upper limit.
+        limit: The upp;l;ler limit.
     Returns:
         The sum of the terms of a given multiple.
     """
