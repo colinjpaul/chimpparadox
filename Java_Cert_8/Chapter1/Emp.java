@@ -1,6 +1,6 @@
 class Emp {
     String name;
-    static int bankVault = 30;
+    static int bankVault;
     static int getBankVaultValue(){
         return bankVault;
 
@@ -14,9 +14,4 @@ class Emp {
         return (sum)/100;
     }
 
-    static int x = count();
-    int count(){
-        return 10;
-    }
-    //test commit
 }
