@@ -18,7 +18,6 @@ public class GuessingGame
         //Logic and While Loop
 
 
-
         while (success ==0)
         {
             System.out.println("please enter an integer betwen 1 and 100 inclusive: ");
