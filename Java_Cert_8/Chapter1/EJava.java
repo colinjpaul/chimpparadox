@@ -1,0 +1,3 @@
+class EJava{
+    //...code
+}
