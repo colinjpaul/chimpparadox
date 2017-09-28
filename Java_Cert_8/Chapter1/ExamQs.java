@@ -1,5 +1,7 @@
-package java.oca;
-import EJava.*;
-class Guru{
-    EJava eJava;
+public class ExamQs {
+
+
+    {
+        System.out.println("EJavaGuru");
+    }
 }
