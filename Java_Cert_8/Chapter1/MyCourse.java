@@ -1,5 +1,4 @@
-import ejavaguru.Course;
-
+import com.ejavaguru.Course;
 class MyCourse{
     Course c;
 }

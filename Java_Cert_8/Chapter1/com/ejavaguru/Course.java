@@ -1,6 +1,4 @@
-class Course{
-    // testing import
-    public static void main (String args[]){
-        System.out.println("Testing");
-    }
+package com.ejavaguru;
+public class Course{
+    public String courseName;
 }
