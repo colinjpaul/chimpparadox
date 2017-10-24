@@ -18,13 +18,20 @@ class sandbox_2 {
         byte exam_total = 7;
         System.out.println(exam_total);
 
-        byte age1 = 1;
-        byte age2 = 2;
+        final byte age1 = 10;
+        final byte age2 = 2;
 
         System.out.println(age1);
 
-        //short sum = age1 + age2;
+        short sum = age1 + age2;
 
+        int a = 10;
+        a = ++a + a + --a - --a + a++;
+        System.out.println(a);
+
+        String name = "hello";
+        if (name != null && name.length() > 0)
+            System.out.println(name.toUpperCase());
 
 
 
