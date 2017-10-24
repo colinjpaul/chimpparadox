@@ -18,6 +18,15 @@ class sandbox_2 {
         byte exam_total = 7;
         System.out.println(exam_total);
 
+        byte age1 = 1;
+        byte age2 = 2;
+
+        System.out.println(age1);
+
+        //short sum = age1 + age2;
+
+
+
 
     }
 
