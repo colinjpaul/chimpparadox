@@ -1,2 +1,3 @@
 bicycles = ['trek', 'cannondale', 'redline', 'specialized']
-print(bicycles)
+message = "My first bicycle was a " + bicycles[].title() + "."
+print (message)
