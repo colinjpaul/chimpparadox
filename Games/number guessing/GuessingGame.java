@@ -33,9 +33,7 @@ public class GuessingGame
                 System.out.println("Congratulations you won! Your numbers of tries was: " + numberOfTries + " and the number was: " + computerValue);
 
             }
-            else if (guess < computerValue){
-                System.out.println("Your guess is too low!");
-            }
+            else if (guess < computerValue) System.out.println("Your guess is too low!");
             else if (guess > computerValue){
                 System.out.println("Your guess is too high!");
             }

@@ -3,6 +3,9 @@ import java.util.ArrayList;
 public class sandbox_3 {
 
     public static void main(String[] args){
+
+        Boolean
+
         /*Integer i1 = new Integer(100);
         Integer i2 = new Integer(100);
 
@@ -36,12 +39,12 @@ public class sandbox_3 {
             System.out.println(total);*/
 
 
-        int myInt = 7;
+       /* int myInt = 7;
         boolean result = true;
         if (result == true)
             do
                 System.out.println(myInt);
-            while (myInt > 10);
+            while (myInt > 10);*/
 
 
 
