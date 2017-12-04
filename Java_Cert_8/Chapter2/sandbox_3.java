@@ -36,12 +36,40 @@ public class sandbox_3 {
             System.out.println(total);*/
 
 
-        int myInt = 7;
+       /* int myInt = 7;
         boolean result = true;
         if (result == true)
             do
                 System.out.println(myInt);
             while (myInt > 10);
+        */
+
+        final byte age1 = 10;
+        final byte age2 = 20;
+        short sum = age1 + age2;
+
+
+        //Assignment
+        Boolean bool1 = true;
+
+        //Constructor
+        Boolean bool2 = new Boolean(true);
+
+        //Call static method
+        Boolean bool3 = Boolean.valueOf(true);
+
+        Long var1 = Long.valueOf(123);
+        Long var2 = Long.valueOf("123");
+        System.out.println(var1 == var2);
+
+        Long var3 = Long.valueOf(223);
+        Long var4 = Long.valueOf("223");
+        System.out.println(var3 == var4);
+
+        System.out.println(var3.equals(var4));
+
+
+
 
 
 
