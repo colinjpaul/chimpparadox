@@ -27,16 +27,7 @@ public class sandbox_3 {
 
         System.out.println(d1 == d2);*/
 
-       /* ArrayList<Double> list = new ArrayList<Double>();
-        list.add(12.12);
-        list.add(11.24);
-        Double total = 0.0;
-        for (Double d : list)
-            total +=d;
-            System.out.println(total);*/
-
-
-       /* int myInt = 7;
+        int myInt = 7;
         boolean result = true;
         if (result == true)
             do
